@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.grid {
+  width: 100%;
+  background-color: rgb(25, 3, 49);
+}
+
+.navbar {
+  width:100%;
+  height: 10vh;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 5px;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact > * {
+  color: rgb(0, 0, 0);;
+}
+
+.titleCard {
+  width: 55vw;
+  height: 60vh;
+  display: grid;
+  text-align: center;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 2.5px 5px;
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.titleBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+  padding-right: 10px;
+  height: 60%;
+  border-radius:20px 20px 0px 0px;
+  background-color: rgba(119, 13, 119, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.titleBtns > * {
+  height: 50%;
+  width: 40px;
+  border-radius: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.minimize {
+  background-color: skyblue;
+
+}
+
+.viewport {
+  background-color: gold;
+}
+
+.close {
+  background-color: rgb(143, 211, 137);
+}
+
+.contactBtns {
+  font-size: 2vw;
+}
+
+.contactBtns > * {
+  padding: 5px 15px 0px 15px;
+}
+.projects {
+width: 100%;
+height: 100vh;
+background-color: rgba(150,184,193);
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(25, 3, 49);
+}
+
+.snap {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
