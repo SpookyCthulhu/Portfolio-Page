@@ -8,21 +8,46 @@ html {
 }
 
 .navbar {
-  width:100%;
+  width:100vw;
   height: 10vh;
   position: fixed;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 3fr minmax(0, 1fr);
+  ;
   justify-content: center;
   align-items: center;
-  gap: 10vw;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 5px;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.navbar > h2:hover {
-  text-decoration: underline;
+.navTitle {
+  padding-left: 20px;
+  height: 40%;
+  width: auto;
+}
+
+.navBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+}
+
+.socialBtns {
+  display: flex;
+  flex-direction: row;
+  gap: 4vh;
+  justify-content: right;
+  align-items: center;
+  font-size: 1.5vw;
+  color: black;
+  padding-right: 20px;
+}
+
+.socialBtns > * {
+  color: black;
 }
 
 .contact {
@@ -122,21 +147,6 @@ html {
 
 .close {
   background-color: rgb(143, 211, 137);
-}
-
-.contactBtns {
-  grid-area: footer;
-  display: flex;
-  flex-direction: row;
-  gap: 4vh;
-  justify-content: center;
-  align-items: top;
-  font-size: 2vw;
-  color: black;
-}
-
-.contactBtns > * {
-  color: black;
 }
 
 .titleContent {
