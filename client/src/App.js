@@ -35,12 +35,28 @@ function App() {
             </div>
           </div>
           <div className='titleContent'>
-            <h1>Michelle Ferris</h1>
-            <p>
-              Fullstack developer with a love for Python and Javascript <br/>
-              Currently looking to put my skills to good use with a company that represents my values
-            </p>
+            <div>
+              <h1>Michelle Ferris</h1>
+              <p>
+                Fullstack developer with a love for Python and Javascript <br/>
+                Currently looking to put my skills to good use with a company that represents my values
+              </p>
+            </div>
           </div>
+          <div className='contactBtns'>
+              <div>
+                <i class="fa-solid fa-house"></i>
+                <p>Gardiner, ME, USA<br/>04359</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-phone"></i>
+                <p>207-427-1574</p>
+              </div>
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+                <p>ferrismichelled<br/>@gmail.com</p>
+              </div>
+            </div>
         </div>
       </div>
 
