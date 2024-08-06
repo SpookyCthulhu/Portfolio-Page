@@ -36,7 +36,7 @@ function App() {
           </div>
           <div className='titleContent'>
             <div>
-              <h1>Michelle Ferris</h1>
+              <h1 className='titleCardTitle'>Michelle Ferris</h1>
               <p>
                 Fullstack developer with a love for Python and Javascript <br/>
                 Currently looking to put my skills to good use with a company that represents my values
