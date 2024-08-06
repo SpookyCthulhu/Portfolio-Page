@@ -3,16 +3,29 @@ import './App.css';
 function App() {
   return (
     <div className='grid'>
-      <div className='navbar snap'></div>
+      <div className='navbar snap'>
+        <h2>Contact</h2>
+        <h2>Projects</h2>
+        <h2>About</h2>
+      </div>
       <div className='contact snap'>
-        {/* <img src='images/background.png' className='background'></img> */}
         <div className='titleCard'>
-          <div className='titleBtns'>
-            <div className='minimize'></div>
-            <div className='viewport'></div>
-            <div className='close'></div>
+          <div className='window'>
+            <div className='arrows'>
+              <i class='fas fa-arrow-left'></i>
+              <i class='fas fa-arrow-right'></i>
+              <i class='fas fa-rotate'></i>
+            </div>
+            <div className='search'>
+              <h4>http://www.SpookyCthulhu.com/splashscreen</h4>
+            </div>
+            <div className='titleBtns'>
+              <div className='minimize'></div>
+              <div className='viewport'></div>
+              <div className='close'></div>
+            </div>
           </div>
-          <div>
+          <div className='titleContent'>
             <h1>Michelle Ferris</h1>
             <p>
               Fullstack developer with a love for Python and Javascript <br/>
@@ -20,14 +33,17 @@ function App() {
             </p>
           </div>
           <div className='contactBtns'>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href='https://github.com/SpookyCthulhu' target='_blank'><i class="fa-brands fa-github"></i></a>
+            <a href='https://www.linkedin.com/in/michelle-ferris-8790271a6/' target='_blank'><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href='https://www.instagram.com/ferris7060/' target='_blank'><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
       </div>
+
       <div className='projects snap'></div>
+
       <div className='about snap'></div>
+
       <div className='footer snap'></div>
 
     </div>
