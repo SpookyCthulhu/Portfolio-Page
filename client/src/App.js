@@ -2,14 +2,10 @@ import { useRef } from 'react';
 import './App.css';
 import logo from './images/ChiStudios.png';
 import useDragger from './hooks/useDragger.jsx';
+import Window from './components/Window.jsx';
 
 function App() {
-
   const containerRef = useRef(null);
-  const cardRef = useRef(null);
-  const handleRef = useRef(null);
-  const { handleMouseDown } = useDragger(handleRef, cardRef, containerRef);
-
 
   return (
     <div className='grid'>
@@ -26,48 +22,35 @@ function App() {
             <a href='https://www.instagram.com/ferris7060/' target='_blank'><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
-      <div className='contact snap' ref={containerRef}>
-        <div className='titleCard' ref={cardRef}>
-          <div className='window' ref={handleRef} onMouseDown={handleMouseDown}>
-            <div className='arrows'>
-              <i class='fas fa-arrow-left'></i>
-              <i class='fas fa-arrow-right'></i>
-              <i class='fas fa-rotate'></i>
-            </div>
-            <div className='search'>
-              <h4>http://www.SpookyCthulhu.com/splashscreen</h4>
-            </div>
-            <div className='titleBtns'>
-              <div className='minimize'></div>
-              <div className='viewport'></div>
-              <div className='close'></div>
-            </div>
+      <div className='contact snap'>
+        <div className='pageContainer' ref={containerRef}>
+            <Window container={containerRef}>
+              <div className='titleContent'>
+                <div>
+                  <h1 className='titleCardTitle'>Michelle Ferris</h1>
+                  <p>
+                    Fullstack developer with a love for Python and Javascript <br/>
+                    Currently looking to put my skills to good use with a company that represents my values
+                  </p>
+                </div>
+              </div>
+              <div className='contactBtns'>
+                  <div>
+                    <i class="fa-solid fa-house"></i>
+                    <p>Gardiner, ME, USA<br/>04359</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>207-427-1574</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>ferrismichelled<br/>@gmail.com</p>
+                  </div>
+              </div>
+            </Window>
           </div>
-          <div className='titleContent'>
-            <div>
-              <h1 className='titleCardTitle'>Michelle Ferris</h1>
-              <p>
-                Fullstack developer with a love for Python and Javascript <br/>
-                Currently looking to put my skills to good use with a company that represents my values
-              </p>
-            </div>
-          </div>
-          <div className='contactBtns'>
-              <div>
-                <i class="fa-solid fa-house"></i>
-                <p>Gardiner, ME, USA<br/>04359</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-phone"></i>
-                <p>207-427-1574</p>
-              </div>
-              <div>
-                <i class="fa-solid fa-envelope"></i>
-                <p>ferrismichelled<br/>@gmail.com</p>
-              </div>
-            </div>
         </div>
-      </div>
 
       <div className='projects snap'>
         <div className='padding'></div>

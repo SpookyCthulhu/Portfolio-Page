@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
-const useDraggable = (handleRef, parentRef = null, containerRef = null) => {
+const useDraggable = (handleRef, containerRef, parentRef = null) => {
   const [isDragging, setIsDragging] = useState(false);
   const position = useRef({ x: 0, y: 0 });
   const dragStart = useRef({ x: 0, y: 0 });
