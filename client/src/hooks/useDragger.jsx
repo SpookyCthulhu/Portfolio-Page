@@ -28,11 +28,9 @@ const useDraggable = (handleRef, parentRef = null, containerRef = null) => {
         const containerRect = containerRef.current.getBoundingClientRect();
         const elementRect = elementToMove.current.getBoundingClientRect();
 
-        // Limit X movement
         newX = Math.max(newX, containerRect.left);
         newX = Math.min(newX, containerRect.right - elementRect.width);
 
-        // Limit Y movement
         newY = Math.max(newY, containerRect.top);
         newY = Math.min(newY, containerRect.bottom - elementRect.height);
       }
@@ -62,9 +60,11 @@ const useDraggable = (handleRef, parentRef = null, containerRef = null) => {
   useEffect(() => {
     if (elementToMove.current) {
       elementToMove.current.style.position = 'absolute';
+      handleRef.current.style.userSelect = 'none';
     }
     if (handleRef.current) {
       handleRef.current.style.cursor = 'grab';
+      handleRef.current.style.userSelect = 'none';
     }
   }, [elementToMove, handleRef]);
 
