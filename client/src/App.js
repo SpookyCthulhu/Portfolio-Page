@@ -1,7 +1,16 @@
+import { useRef } from 'react';
 import './App.css';
 import logo from './images/ChiStudios.png';
+import useDragger from './hooks/useDragger.jsx';
 
 function App() {
+
+  const containerRef = useRef(null);
+  const cardRef = useRef(null);
+  const handleRef = useRef(null);
+  const { handleMouseDown } = useDragger(handleRef, cardRef, containerRef);
+
+
   return (
     <div className='grid'>
       <div className='navbar snap'>
@@ -17,9 +26,9 @@ function App() {
             <a href='https://www.instagram.com/ferris7060/' target='_blank'><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
-      <div className='contact snap'>
-        <div className='titleCard'>
-          <div className='window'>
+      <div className='contact snap' ref={containerRef}>
+        <div className='titleCard' ref={cardRef}>
+          <div className='window' ref={handleRef} onMouseDown={handleMouseDown}>
             <div className='arrows'>
               <i class='fas fa-arrow-left'></i>
               <i class='fas fa-arrow-right'></i>
@@ -60,7 +69,9 @@ function App() {
         </div>
       </div>
 
-      <div className='projects snap'></div>
+      <div className='projects snap'>
+        <div className='padding'></div>
+      </div>
 
       <div className='about snap'></div>
 
