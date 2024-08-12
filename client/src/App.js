@@ -53,7 +53,7 @@ function App() {
         </div>
 
       <div className='projects snap'>
-        <div className='padding'></div>
+        {/* <div className='padding'></div> */}
       </div>
 
       <div className='about snap'></div>
