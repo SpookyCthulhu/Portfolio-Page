@@ -1,7 +1,9 @@
 import { useRef } from 'react';
 import './App.css';
 import logo from './images/ChiStudios.png';
-import useDragger from './hooks/useDragger.jsx';
+import topWave from './images/topWave.png';
+import bottomWave from './images/bottomWave.png';
+import flatTopWave from './images/flatTopWave.png';
 import Window from './components/Window.jsx';
 
 function App() {
@@ -23,8 +25,18 @@ function App() {
         </div>
       </div>
       <div className='contact snap'>
-        <div className='pageContainer' ref={containerRef}>
-            <Window container={containerRef}>
+        <div className='landing'>
+          <img src={topWave} className='topWave'/>
+          <img src={bottomWave} className='bottomWave'/>
+          <h1 className='landingText name'>Michelle Ferris</h1>
+          <h1 className='landingText jobDesc'>Fullstack Developer</h1>
+        </div>
+      </div>
+
+      <div className='projects snap page'>
+        <img src={flatTopWave} className='flatTopWave' />
+        <div className='pageContainer' >
+            <Window>
               <div className='titleContent'>
                 <div>
                   <h1 className='titleCardTitle'>Michelle Ferris</h1>
@@ -50,10 +62,6 @@ function App() {
               </div>
             </Window>
           </div>
-        </div>
-
-      <div className='projects snap'>
-        {/* <div className='padding'></div> */}
       </div>
 
       <div className='about snap'></div>

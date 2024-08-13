@@ -1,17 +1,11 @@
 import { useRef } from 'react';
 import useDragger from './../hooks/useDragger.jsx';
 
-const Window = ({ container, children }) => {
-    const cardRef = useRef(null);
-    const handleRef = useRef(null);
-    // handleRef is where the cursor clicks to drag, if container is not null, restricts drag to within container,
-    // cardRef, if added, will designate which element actually gets moved on drag. 
-    const { handleMouseDown } = useDragger(handleRef, container, cardRef);
-  
+const Window = ({ children }) => {
   
     return (
-        <div className='titleCard' ref={cardRef}>
-            <div className='window' ref={handleRef} onMouseDown={handleMouseDown}>
+        <div className='titleCard'>
+            <div className='window'>
               <div className='arrows'>
                 <i class='fas fa-arrow-left'></i>
                 <i class='fas fa-arrow-right'></i>
