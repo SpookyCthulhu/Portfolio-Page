@@ -28,7 +28,8 @@ function App() {
         <div className='landing'>
           <img src={topWave} className='topWave'/>
           <img src={bottomWave} className='bottomWave'/>
-          <h1 className='landingText name'>Michelle Ferris</h1>
+          <h1 className='landingText name'>Michelle</h1>
+          <h1 className='landingText name lastName'>Ferris</h1>
           <h1 className='landingText jobDesc'>Fullstack Developer</h1>
         </div>
       </div>
@@ -46,7 +47,56 @@ function App() {
                   </p>
                 </div>
               </div>
-              <div className='contactBtns'>
+            </Window>
+          </div>
+      </div>
+
+      <div className='aboutMe snap'>
+        <h1 className='aboutTitle'>About Me</h1>
+          <div className='skills'>
+            <h2>Attributes</h2>
+            <p>Imaginative designer <br/>Computer Scientist <br/>Resourceful problem solver</p>
+            <h2>Tech Stack</h2>
+            <p>Frontend</p>
+            <div className='techstack'>
+              <i class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-figma"></i>
+            </div>
+            <p>Backend</p>
+            <div className='techstack'>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-node"></i>
+              <i class="fa-brands fa-npm"></i>
+            </div>
+            <p>Scripting</p>
+            <div className='techstack'>
+              <i class="fa-brands fa-python"></i>
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <p>Hosting</p>
+            <div className='techstack'>
+              <i class="fa-brands fa-docker"></i>
+              <i class="fa-brands fa-git"></i>
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-aws"></i>
+            </div>
+          </div>
+          <div className='passion'>
+            <h2>My Passion</h2>
+            <p>I have been building web applications for over a decade. <br/>It has always been a creative outlet for me. <br/>Simulatenously demanding logic and reason, as well as vision and inspriation. <br/> This discipline comes naturally to me, like an artist to a paintbrush. I love to create<br/></p>
+          </div>
+          <div className='education'>
+            <h2>Education</h2>
+            <p>University of Maine<br/>2019-2023<br/>B.S. Computer Science<br/><li>Deans list Fall 2020</li></p>
+            <h2>Relevant Coursework</h2>
+            <p>| Cloud Computing |<br/>| Cyber Security |<br/>| Advanced Data Structures |<br/><br/>
+Gained experience with Scrum, DevOps, and Kanban through multiple semester-long group projects. </p>
+          </div>
+          <div className='bottomAbout'>
+            <div className='contactBtns'>
                   <div>
                     <i class="fa-solid fa-house"></i>
                     <p>Gardiner, ME, USA<br/>04359</p>
@@ -60,13 +110,10 @@ function App() {
                     <p>ferrismichelled<br/>@gmail.com</p>
                   </div>
               </div>
-            </Window>
           </div>
+        <div className='about'>
+        </div>
       </div>
-
-      <div className='about snap'></div>
-
-      <div className='footer snap'></div>
 
     </div>
   );
