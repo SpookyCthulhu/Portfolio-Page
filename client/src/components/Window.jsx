@@ -1,10 +1,10 @@
 import { useRef } from 'react';
 import useDragger from './../hooks/useDragger.jsx';
 
-const Window = ({ children }) => {
+const Window = ({ style, children }) => {
   
     return (
-        <div className='titleCard'>
+        <div className={'titleCard ' + style}>
             <div className='window'>
               <div className='arrows'>
                 <i class='fas fa-arrow-left'></i>

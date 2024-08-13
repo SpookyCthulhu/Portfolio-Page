@@ -124,7 +124,7 @@ body {
 
 .titleCard {
   width: calc(50vw + 20vh);
-  height: calc(25vh + 25vw);
+  height: calc(22.5vh + 22.5vw);
   display: grid;
   grid-template-rows: minmax(0, 1fr) 3fr minmax(0, 2fr);
   grid-template-areas:
@@ -138,9 +138,19 @@ body {
   box-shadow: rgba(0, 0, 0, 0.5) 0px calc(0.25vw + 0.25vh) calc(0.1vw + 0.1vh) calc(0.2vw + 0.2vh);
 }
 
-.small {
-  width: 30vw;
-  height: 30vh;
+.mini {
+  width: calc(30vw + 10vh);
+  height: calc(15vh + 15vw);
+  top: 150vh;
+}
+
+.abs {
+  position: absolute;
+  left: 50%;;
+}
+
+.main {
+  left: 15%;
 }
 
 .window {
@@ -195,6 +205,26 @@ body {
   width: calc(1.5vh + 1.5vw);
   border-radius: 1000px;
 }
+
+.mini > .window > .arrows {
+  font-size: calc(1vw + 1vh);
+  gap: calc(0.3vh + 0.6vw);
+}
+
+.mini > .window > .titleBtns {
+  gap: calc(0.3vh + 0.6vw);
+}
+
+.mini > .window > .titleBtns > * {
+  width: calc(1vw + 1vh);
+  height: calc(1vw + 1vh);
+}
+
+.mini > .window > .search > * {
+  margin: calc(0.35vw + 0.35vh);
+  font-size: calc(0.35vw + 0.35vh)
+}
+
 
 
 .minimize {
@@ -280,6 +310,10 @@ background-position: center, center;
   font-size: 2vw;
   display: flex;
   gap: 1vw;
+  color: #61746A;
+}
+.techstack > *:hover{
+  color: black;
 }
 
 .passion {

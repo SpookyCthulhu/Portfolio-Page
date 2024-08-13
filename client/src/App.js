@@ -21,7 +21,6 @@ function App() {
         <div className='socialBtns'>
             <a href='https://github.com/SpookyCthulhu' target='_blank'><i class="fa-brands fa-github"></i></a>
             <a href='https://www.linkedin.com/in/michelle-ferris-8790271a6/' target='_blank'><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href='https://www.instagram.com/ferris7060/' target='_blank'><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
       <div className='contact snap'>
@@ -37,14 +36,19 @@ function App() {
       <div className='projects snap page'>
         <img src={flatTopWave} className='flatTopWave' />
         <div className='pageContainer' >
-            <Window>
+            <Window style='main abs'>
               <div className='titleContent'>
                 <div>
-                  <h1 className='titleCardTitle'>Michelle Ferris</h1>
-                  <p>
-                    Fullstack developer with a love for Python and Javascript <br/>
-                    Currently looking to put my skills to good use with a company that represents my values
-                  </p>
+                  <h1 className='titleCardTitle'>Fullstack Bookstore Application</h1>
+                  <p>Images of website and <br/>link go here</p>
+                </div>
+              </div>
+            </Window>
+            <Window style='mini abs'>
+              <div className='titleContent'>
+                <div>
+                  <h1 className='titleCardTitle'>Application Description</h1>
+                  <p>Description of project and the workflow used goes here</p>
                 </div>
               </div>
             </Window>
