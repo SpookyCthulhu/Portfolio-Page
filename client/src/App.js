@@ -92,7 +92,7 @@ function App() {
           <h2>My Passion</h2>
           <p>I have been building web applications for over a decade. <br/>It has always been a creative outlet for me. <br/>Simulatenously demanding logic and reason, as well as vision and inspriation. <br/> This discipline comes naturally to me, like an artist to a paintbrush. I love to create<br/></p>
         </div>
-        <div className='education'>
+         <div className='education'>
           <h2>Education</h2>
           <p>University of Maine<br/>2019-2023<br/>B.S. Computer Science<br/>Deans list Fall 2020</p>
         </div>
