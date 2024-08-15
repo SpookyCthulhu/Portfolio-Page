@@ -285,7 +285,7 @@ body {
 }
 
 p {
-  font-size: calc(0.5vh + 0.5vw);
+  font-size: calc(1vh + 0.4vw);
 }
 
 .projects {
@@ -315,16 +315,17 @@ background-position: center, center;
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-columns: minmax(0, 30vh) 15vh 15vh 2fr calc(5vw + 20vh) 0.5fr;
   grid-template-rows: 10vh minmax(0, 0.75fr) 1fr 1fr 1fr minmax(0, 0.5fr);
 }
 
 .aboutTitle {
-  font-size: 6vw;
-  grid-row: 1 / 2;
+  font-size: 10vh;
+  grid-row: 2 / 3;
   grid-column: 1 / 5;
-  margin-left: 5vw;
-  padding-top: 2vh;
+  margin: 0px;
+  margin-left: 10vh;
+  align-self: center;
 }
 
 .skills {
@@ -336,7 +337,7 @@ background-position: center, center;
 }
 
 .techstack {
-  font-size: 2vw;
+  font-size: calc(1vh + 24px);
   display: flex;
   gap: 1vw;
   color: #61746A;
@@ -346,13 +347,12 @@ background-position: center, center;
 }
 
 .passion {
-  grid-row: 3 / 6;
-  grid-column: 2 / 3;
-  margin-top: 20%;
+  grid-row: 3 / 5;
+  grid-column: 2 / 4;
+  margin-top: 10%;
   background-color: #61746A;
   color: white;
-  padding: 20px;
-  height: 70%;
+  padding: 30px;
 }
 
 .education {
@@ -383,7 +383,7 @@ background-position: center, center;
   height: 100%;
   background-color: black;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr 1fr;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -393,8 +393,13 @@ background-position: center, center;
   grid-column: 2 / 3;
   font-family: 'montserrat alternates';
   color: white;
-  font-size: 2vw;
+  font-size: 3vh;
   padding-top: 5px;
+}
+
+.contactBtns > * > p {
+ font-size: 16px;
+ margin-top: 5px;
 }
 
 .contactBtns > * {
@@ -408,7 +413,7 @@ background-position: center, center;
 }
 
 .about {
-  width: 77%;
+  width: calc(100vw - 40vh);
   height: 100vh;
   position: absolute;
   right: 0;
@@ -422,7 +427,7 @@ background-position: center, center;
 
 @media (max-width: 1000px) {
   .grid > .aboutMe {
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: calc(15vw + 15vh) calc(15vw + 15vh) 1fr;
     grid-template-rows: 10vh minmax(0, 1fr) minmax(0, 5fr) 1fr 0.5fr 0.75fr;
     /* grid-template-rows: 10vh minmax(0, 1.5) minmax(0, 3fr) minmax(0, 2fr) minmax(0,1fr); */
   }
@@ -439,13 +444,13 @@ background-position: center, center;
   }
 
   p { 
-    font-size: calc(12px + 0.5vw);
-    margin: 0.5vw auto 0.5vw auto;
+    font-size: calc(12px + 0.3vh);
+    margin: 1vw auto 1vw auto;
   }
   /* added */
   h2 {
-    font-size: calc(16px + 1vw);
-    margin: 1vw auto 1vw auto;
+    font-size: calc(16px + 0.5vw);
+    margin: 2vw auto 2vw auto;
   }
 
   .skills {
@@ -456,12 +461,13 @@ background-position: center, center;
   .passion {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
+    margin-bottom: 20%
   }
 
   .education {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    padding: 0px;
+    padding-left: 0px;
     margin-left: 20px;
   }
 
@@ -469,6 +475,7 @@ background-position: center, center;
     grid-column: 2 / 4;
     grid-row: 4 / 5;
     background-color: white;
+    padding-top: 1em;
   }
 
   .education > h2, .relevant > h2 {
@@ -480,6 +487,7 @@ background-position: center, center;
     grid-column: 1 / 4;
     grid-row: 5 / 6;
     background-color: white;
+    padding-left: 0px;
   }
 
   .bottomAbout {
@@ -493,13 +501,18 @@ background-position: center, center;
     font-size: 3vw;
   }
 
+  .contactBtns > * > p {
+    font-size: 12px;
+    margin-top: 0px;
+  }
+
   .about {
     width: 55vw;
     background-position: top;
   }
 
   .techstack {
-    font-size: calc(24px + 2vw);
+    font-size: calc(24px + 1vh);
   }
 }
 
@@ -542,6 +555,10 @@ background-position: center, center;
 
   .contactBtns {
     font-size: 5vw;
+  }
+
+  .contactBtns > * > p {
+    font-size: calc(8px + 0.5vw);
   }
 
   .about {
