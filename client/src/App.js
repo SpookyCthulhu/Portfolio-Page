@@ -94,11 +94,16 @@ function App() {
           </div>
           <div className='education'>
             <h2>Education</h2>
-            <p>University of Maine<br/>2019-2023<br/>B.S. Computer Science<br/><li>Deans list Fall 2020</li></p>
-            <h2>Relevant Coursework</h2>
-            <p>| Cloud Computing |<br/>| Cyber Security |<br/>| Advanced Data Structures |<br/><br/>
-Gained experience with Scrum, DevOps, and Kanban through multiple semester-long group projects. </p>
+            <p>University of Maine<br/>2019-2023<br/>B.S. Computer Science<br/>Deans list Fall 2020</p>
           </div>
+          <div className='relevant'>
+              <h2>Relevant Coursework</h2>
+              <p>| Cloud Computing |<br/>| Cyber Security |<br/>| Advanced Data Structures |<br/><br/></p>
+          </div>
+          <div className='group'>
+            <p>Gained experience with Scrum, DevOps, and Kanban through multiple semester-long group projects.</p>
+          </div>
+
           <div className='bottomAbout'>
             <div className='contactBtns'>
                   <div>
