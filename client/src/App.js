@@ -14,16 +14,16 @@ function App() {
       <div className='navbar snap'>
         <img src={logo} className='navTitle'/>
         <div className='navBtns'>
-          <h2>Contact</h2>
-          <h2>Projects</h2>
-          <h2>About</h2>
+          <a href='#contact'>Contact</a>
+          <a href='#projects'>Projects</a>
+          <a href='#about'>About</a>
         </div>
         <div className='socialBtns'>
             <a href='https://github.com/SpookyCthulhu' target='_blank'><i class="fa-brands fa-github"></i></a>
             <a href='https://www.linkedin.com/in/michelle-ferris-8790271a6/' target='_blank'><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
       </div>
-      <div className='contact snap'>
+      <div className='contact snap' id='contact'>
         <div className='landing'>
           <img src={topWave} className='topWave'/>
           <img src={bottomWave} className='bottomWave'/>
@@ -33,7 +33,7 @@ function App() {
         </div>
       </div>
 
-      <div className='projects snap page'>
+      <div className='projects snap page' id='projects'>
         <img src={flatTopWave} className='flatTopWave' />
         <div className='pageContainer' >
             <Window style='main abs'>
@@ -55,7 +55,7 @@ function App() {
           </div>
       </div>
 
-      <div className='aboutMe snap'>
+      <div className='aboutMe snap' id='about'>
         <h1 className='aboutTitle'>About Me</h1>
         <div className='skills'>
           <h2>Attributes</h2>
@@ -63,29 +63,71 @@ function App() {
           <h2>Tech Stack</h2>
           <p>Frontend</p>
           <div className='techstack'>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-figma"></i>
+            <div class="icon-container">
+              <i class="fa-brands fa-js"></i>
+              <span class="tooltip-text">Javascript</span>
+            </div>
+            <div class="icon-container">
+              <i class="fa-brands fa-react"></i>
+              <span class="tooltip-text">React</span>
+            </div>
+            <div class="icon-container">
+              <i class="fa-brands fa-html5"></i>
+              <span class="tooltip-text">HTML5</span>
+            </div>
+            <div class="icon-container">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span class="tooltip-text">CSS3</span>
+            </div>
+            <div class="icon-container">
+              <i class="fa-brands fa-figma"></i>
+              <span class="tooltip-text">Figma</span>
+            </div>
           </div>
           <p>Backend</p>
           <div className='techstack'>
-            <i class="fa-solid fa-database"></i>
-            <i class="fa-brands fa-node"></i>
-            <i class="fa-brands fa-npm"></i>
+            <div class="icon-container">
+              <i class="fa-solid fa-database"></i>
+              <span class="tooltip-text">MySQL</span>
+            </div>
+            <div class="icon-container">
+              <i class="fa-brands fa-node"></i>
+              <span class="tooltip-text">Node.js</span>
+            </div>
+            <div class="icon-container">
+              <i class="fa-brands fa-npm"></i>
+              <span class="tooltip-text">NPM</span>
+            </div>
           </div>
           <p>Scripting</p>
           <div className='techstack'>
-            <i class="fa-brands fa-python"></i>
-            <i class="fa-brands fa-js"></i>
+            <div class="icon-container">
+              <i class="fa-brands fa-python"></i>
+              <span class="tooltip-text">Python</span>
+            </div>
+            <div class="icon-container">
+              <i class="fa-brands fa-js"></i>
+              <span class="tooltip-text">Javascript</span>
+            </div>
           </div>
           <p>Hosting</p>
           <div className='techstack'>
-            <i class="fa-brands fa-docker"></i>
-            <i class="fa-brands fa-git"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-aws"></i>
+            <div class="icon-container">
+              <i class="fa-brands fa-docker"></i>
+              <span class="tooltip-text">Docker</span>
+            </div>
+            <div class="icon-container">
+              <i class="fa-brands fa-git"></i>
+              <span class="tooltip-text">Git</span>
+            </div>
+            <div class="icon-container">
+              <i class="fa-brands fa-github"></i>
+              <span class="tooltip-text">Github</span>
+            </div>
+            <div class="icon-container">
+              <i class="fa-brands fa-aws"></i>
+              <span class="tooltip-text">AWS</span>
+            </div>
           </div>
         </div>
         <div className='passion'>

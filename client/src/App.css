@@ -357,10 +357,46 @@ background-position: center, center;
   display: flex;
   gap: 1vw;
   color: #61746A;
+  position: relative;
 }
+
+
 .techstack > *:hover{
   color: black;
 }
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position it above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.icon-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 .passion {
   grid-row: 3 / 5;
