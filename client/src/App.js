@@ -23,13 +23,16 @@ function App() {
             <a href='https://www.linkedin.com/in/michelle-ferris-8790271a6/' target='_blank'><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
       </div>
-      <div className='contact snap' id='contact'>
-        <div className='landing'>
-          <img src={topWave} className='topWave'/>
-          <img src={bottomWave} className='bottomWave'/>
-          <h1 className='landingText name'>Michelle</h1>
-          <h1 className='landingText name lastName'>Ferris</h1>
-          <h1 className='landingText jobDesc'>Fullstack Developer</h1>
+      <div className='snip'>
+        <div className='contact snap' id='contact'>
+          <div className='landing'>
+            <img src={topWave} className='wave topW'/>
+            <img src={bottomWave} className='wave bottomW'/>
+            <div class='padding'></div>
+            <h1 className='landingText name'>Michelle</h1>
+            <h1 className='landingText name lastName'>Ferris</h1>
+            <h1 className='landingText jobDesc'>Fullstack Developer</h1>
+          </div>
         </div>
       </div>
 
@@ -65,68 +68,68 @@ function App() {
           <div className='techstack'>
             <div class="icon-container">
               <i class="fa-brands fa-js"></i>
-              <span class="tooltip-text">Javascript</span>
+              <p class="tooltip-text">Javascript</p>
             </div>
             <div class="icon-container">
               <i class="fa-brands fa-react"></i>
-              <span class="tooltip-text">React</span>
+              <p class="tooltip-text">React</p>
             </div>
             <div class="icon-container">
               <i class="fa-brands fa-html5"></i>
-              <span class="tooltip-text">HTML5</span>
+              <p class="tooltip-text">HTML5</p>
             </div>
             <div class="icon-container">
               <i class="fa-brands fa-css3-alt"></i>
-              <span class="tooltip-text">CSS3</span>
+              <p class="tooltip-text">CSS3</p>
             </div>
             <div class="icon-container">
               <i class="fa-brands fa-figma"></i>
-              <span class="tooltip-text">Figma</span>
+              <p class="tooltip-text">Figma</p>
             </div>
           </div>
           <p>Backend</p>
           <div className='techstack'>
             <div class="icon-container">
               <i class="fa-solid fa-database"></i>
-              <span class="tooltip-text">MySQL</span>
+              <p class="tooltip-text">MySQL</p>
             </div>
             <div class="icon-container">
               <i class="fa-brands fa-node"></i>
-              <span class="tooltip-text">Node.js</span>
+              <p class="tooltip-text">Node.js</p>
             </div>
             <div class="icon-container">
               <i class="fa-brands fa-npm"></i>
-              <span class="tooltip-text">NPM</span>
+              <p class="tooltip-text">NPM</p>
             </div>
           </div>
           <p>Scripting</p>
           <div className='techstack'>
             <div class="icon-container">
               <i class="fa-brands fa-python"></i>
-              <span class="tooltip-text">Python</span>
+              <p class="tooltip-text">Python</p>
             </div>
             <div class="icon-container">
               <i class="fa-brands fa-js"></i>
-              <span class="tooltip-text">Javascript</span>
+              <p class="tooltip-text">Javascript</p>
             </div>
           </div>
           <p>Hosting</p>
           <div className='techstack'>
             <div class="icon-container">
               <i class="fa-brands fa-docker"></i>
-              <span class="tooltip-text">Docker</span>
+              <p class="tooltip-text">Docker</p>
             </div>
             <div class="icon-container">
               <i class="fa-brands fa-git"></i>
-              <span class="tooltip-text">Git</span>
+              <p class="tooltip-text">Git</p>
             </div>
             <div class="icon-container">
               <i class="fa-brands fa-github"></i>
-              <span class="tooltip-text">Github</span>
+              <p class="tooltip-text">Github</p>
             </div>
             <div class="icon-container">
               <i class="fa-brands fa-aws"></i>
-              <span class="tooltip-text">AWS</span>
+              <p class="tooltip-text">AWS</p>
             </div>
           </div>
         </div>
