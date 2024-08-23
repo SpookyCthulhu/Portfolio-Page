@@ -38,7 +38,6 @@ function App() {
 
       <div className='projects snap page' id='projects'>
         <img src={flatTopWave} className='flatTopWave' />
-        <div className='pageContainer' >
             <Window style='main abs'>
               <div className='titleContent'>
                 <div>
@@ -55,7 +54,6 @@ function App() {
                 </div>
               </div>
             </Window>
-          </div>
       </div>
 
       <div className='aboutMe snap' id='about'>
