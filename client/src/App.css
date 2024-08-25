@@ -175,7 +175,7 @@ body {
 }
 
 .lastName {
-  top: 34.5svh;
+  top: 37svh;
   color: white;
 }
 
@@ -188,19 +188,32 @@ body {
 @media (max-width: 1200px) and (min-height: 600px) {
   .padding {
     position: absolute;
-    height: 10svh;
+    height: 0svh;
     width: 100vw;
     bottom: 0svh;
     background-color: white;
   }
 
   .jobDesc {
-    top: 85svh;
-    font-size: calc(30px + 2vw);
+    top: 87.5svh;
+    font-size: 6vw;
+  }
+
+  .wave {
+    height: 80vw;
   }
 
   .contact {
-    /* width: 1200px; */
+    width: 1200px;
+  }
+
+  .name {
+    font-size: 20vw;
+  }
+
+  .lastName {
+    top: 65vw;
+    font-size: 23vw;
   }
 }
 
@@ -256,7 +269,7 @@ body {
   background-position: center, center;
   }
 
-  @media (min-width: 501px) {
+  @media (min-width: 1201px) {
     .projects {
       display: grid;
       grid-template-columns: 4fr 4fr 4fr 2fr 1fr 4fr;
@@ -417,6 +430,42 @@ h2 {
     margin-bottom: 0.5svh;
 }
 
+@media (max-width: 1200px) {
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 2fr 1fr;
+    grid-template-rows: 10svh 1fr 30vw 30vw 15vw 1fr;
+  }
+
+  .window {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
+  }
+
+  .titleCard {
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+    border: none;
+    box-shadow: black 0px 10px 5px 0px;
+  }
+  .mini {
+    grid-column: 3 / 5;
+    grid-row: 4 / 6;
+  }
+
+  .window {
+    border: none;
+  }
+
+  .search > * {
+    font-size: 1vw;
+  }
+
+  .mini > .window > .search > #searchText {
+    font-size: 0.7vw;
+  }
+  
+}
+
 @media (max-width: 500px) {
   .projects {
     display: grid;
@@ -455,7 +504,7 @@ h2 {
   .main {
     left: 5%;
   }
-
+  
   .titleBtns {
     height: 100%;
     display: flex;
@@ -808,9 +857,4 @@ h2 {
   .techstack {
     font-size: calc(18px + 2vw);
   }
-}
-
-.snap {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }

@@ -1,6 +1,3 @@
-import { useRef } from 'react';
-import useDragger from './../hooks/useDragger.jsx';
-
 const Window = ({ style, children }) => {
   
     return (
@@ -12,7 +9,7 @@ const Window = ({ style, children }) => {
                 <i class='fas fa-rotate'></i>
               </div>
               <div className='search'>
-                <h4>http://www.SpookyCthulhu.com/splashscreen</h4>
+                <h4 id='searchText'>http://www.SpookyCthulhu.com/splashscreen</h4>
               </div>
               <div className='titleBtns'>
                 <div className='minimize'></div>

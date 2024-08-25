@@ -14,7 +14,7 @@ function App() {
       <div className='navbar snap'>
         <img src={logo} className='navTitle'/>
         <div className='navBtns'>
-          <a href='#contact'>Contact</a>
+          <a href='#contact'>Home</a>
           <a href='#projects'>Projects</a>
           <a href='#about'>About</a>
         </div>
@@ -41,8 +41,8 @@ function App() {
             <Window style='main abs'>
               <div className='titleContent'>
                 <div>
-                  <h1 className='titleCardTitle'>Fullstack Bookstore Application</h1>
-                  <p>Images of website and <br/>link go here</p>
+                  <h1 className='titleCardTitle'>Application Title</h1>
+                  <p>TBD</p>
                 </div>
               </div>
             </Window>
@@ -124,10 +124,6 @@ function App() {
             <div class="icon-container">
               <i class="fa-brands fa-github"></i>
               <p class="tooltip-text">Github</p>
-            </div>
-            <div class="icon-container">
-              <i class="fa-brands fa-aws"></i>
-              <p class="tooltip-text">AWS</p>
             </div>
           </div>
         </div>
