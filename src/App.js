@@ -51,7 +51,7 @@ function App() {
               <div className='titleContent'>
                 <div>
                   <h1 className='titleCardTitle'>Application Description</h1>
-                  <p>Description of project and the workflow used goes here</p>
+                  <p>Will be updated as current projects are brought online</p>
                 </div>
               </div>
             </Window>
